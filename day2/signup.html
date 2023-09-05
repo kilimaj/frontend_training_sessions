@@ -10,40 +10,46 @@
     <h2>Sign Up</h2>
     <form action="">
       <dl>
-        <dt>ID :</dt>
+        <dt><label for="id">ID :</label></dt>
         <dd>
           <input
             type="text"
             name="id"
+            id="id"
             maxlength="20"
             placeholder="insert id max 20 char..."
             value="id..."
           />
         </dd>
-        <dt>Password :</dt>
+        <dt><label for="passwordid">Password :</label></dt>
         <dd>
           <input
             type="password"
             name="password"
+            id="passwordid"
             maxlength="20"
             placeholder="Enter password max 20 char.."
           />
         </dd>
-        <dt>Age :</dt>
+        <dt><label for="ageid">Age :</label></dt>
         <dd>
           <input
             type="number"
             name="age"
+            id="ageid"
             maxlength="3"
             placeholder="Insert age"
           />
         </dd>
         <dt>Gender :</dt>
         <dd>
-          male:
-          <input type="radio" name="gender" value="male" />
-          female:
-          <input type="radio" name="gender" value="female" />
+          <label
+            >male: <input type="radio" name="gender" value="male" />
+          </label>
+          <label>
+            female:
+            <input type="radio" name="gender" value="female" />
+          </label>
         </dd>
       </dl>
     </form>
