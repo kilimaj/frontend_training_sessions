@@ -8,7 +8,7 @@
   </head>
   <body>
     <h2>Sign Up</h2>
-    <form action="">
+    <form action="./complete.html">
       <dl>
         <dt><label for="id">ID :</label></dt>
         <dd>
@@ -51,7 +51,42 @@
             <input type="radio" name="gender" value="female" />
           </label>
         </dd>
+        <dt>Sports :</dt>
+        <dd>
+          <label
+            >Soccer : <input type="checkbox" name="sports" value="soccer" />
+          </label>
+          <label
+            >Baseball : <input type="checkbox" name="sports" value="baseball" />
+          </label>
+          <label
+            >Basketball :
+            <input type="checkbox" name="sports" value="basketball" />
+          </label>
+          <label
+            >Volleyball :
+            <input type="checkbox" name="sports" value="volleyball" />
+          </label>
+        </dd>
+
+        <dt>Email :</dt>
+        <dd>
+          <input type="text" name="email" /> @
+          <select name="email_domain">
+            <option value="gmail.com">gmail.com</option>
+            <option value="hotmail.com">hotmail.com</option>
+          </select>
+        </dd>
+
+        <dt>Self Intro :</dt>
+        <dd>
+          <textarea cols="50" rows="10" maxlength="20"></textarea>
+        </dd>
+        <dt>Picture :</dt>
+        <dd><input type="file" name="picture" accept="image/*" multiple /></dd>
       </dl>
+      <input type="reset" value="reset" />
+      <input type="submit" value="submit" />
     </form>
   </body>
 </html>
