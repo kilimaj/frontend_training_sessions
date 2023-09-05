@@ -6,27 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style type="text/css">
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: red;
-        }
-        h1 {
-            margin: 0;
-            padding: 21px 0px;
-            margin-bottom: 50px;
-            
-        }
-        p {
-            /* margin-top: 50px; */
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: red;
+      }
+      h1 {
+        /* overflow: hidden; */
+        /* display: none; */
+        display: block;
+        opacity: 0.5;
+        overflow: auto;
+        border-radius: 50px;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* padding: 21px 0px; */
+        /* margin-bottom: 50px; */
+        width: 100px;
+        height: 100px;
+        /* border: solid 1px red; */
+        /* border: dashed 1px red; */
+        border-top: solid 10px #eee;
+        border-left: solid 10px #ddd;
+        border-right: solid 10px #aaa;
+        border-bottom: solid 10px #999;
+      }
+      p {
+        /* margin-top: 50px; */
+        height: 100px;
+        width: 50%;
+        border-top: solid 10px #aaa;
+        border-left: solid 10px #999;
+        border-right: solid 10px #eee;
+        border-bottom: solid 10px #ddd;
+      }
     </style>
     <!-- The last one gets implemented thats why bg is yellow -->
     <!-- But if there is inline then it will be used -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: aliceblue;">
-    <h1>Hello World</h1>
+  <body style="background-color: aliceblue">
+    <h1>Hello World !</h1>
     <p>Hello Paragraph</p>
   </body>
 </html>
