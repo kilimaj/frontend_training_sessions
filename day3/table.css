@@ -1,0 +1,30 @@
+table {
+  border: solid 1px #000;
+  border-collapse: collapse;
+}
+
+table td {
+  border: solid 1px #000;
+  padding: 6px;
+}
+
+/* tr:nth-child(even) {
+    background-color: #ccc;
+} */
+
+tr:nth-child(2n) {
+  /* n starts from 0 */
+  background-color: #ccc;
+}
+
+/* tr:nth-child(odd) {
+    background-color: #f00;
+} */
+
+tr:nth-child(2n + 1) {
+  background-color: #f00;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: yellow;
+}
