@@ -1,0 +1,113 @@
+p span {
+  color: red;
+}
+
+td {
+    color: red;
+    padding: 10px;
+    border: solid 1px #f00;
+}
+
+.green {
+    color: green !important;
+}
+
+.blue {
+    color: blue;
+}
+
+/* a {
+    color: black;
+    text-decoration: none;
+} */
+
+a:link{
+    color: green;
+    text-decoration: none;
+}
+
+a:hover
+a:visited
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+
+a[title] {
+    color: red;
+}
+
+a[href="#2"] {
+    color: yellow;
+}
+
+a[href="#2"]:hover {
+    color: blue;
+}
+
+li:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:nth-child(3) {
+    color: greenyellow;
+}
+
+li:last-child {
+    color: yellow;
+}
+
+/* a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: yellow;
+    text-decoration: underline;
+}
+
+a:active{
+    color: green;
+    text-decoration: underline;
+} */
+
+li.sky:hover {
+    background-color: skyblue;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+        margin-left: 0px;
+        opacity: 1;
+        rotation: 0;
+    }
+    to {
+        background-color: yellow;
+        width: 300px;
+        height: 300px;
+        margin-left: 500px;
+        opacity: 0;
+        rotate: 180deg;
+    }
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
