@@ -1,0 +1,67 @@
+/* div {
+   display: block;
+}
+
+.d-inline {
+    display: inline;
+    padding: 100px;
+} */
+
+/* .div-1 {
+  background-color: red;
+}
+
+.div-2 {
+  background-color: yellow;
+  display: inline;
+}
+
+.div-3 {
+  background-color: blue;
+  display: inline;
+  width: 500px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.div-5 {
+  background-color: pink;
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+} */
+
+div {
+  border: solid 1px #aaa;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #ddd;
+  height: 100px;
+}
+
+.footer {
+  background-color: #ddd;
+  height: 100px;
+  clear: left;
+}
+
+.left,
+.main,
+.right {
+  height: 300px;
+  /* display: inline-block; */
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.left,
+.right {
+    width: 20%;
+}
+.main {
+    width: 60%;
+}
