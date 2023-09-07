@@ -20,3 +20,15 @@ console.log(a + " " + b + " " + c + " " + d);
 
 let f = `${a}---${b}---${c}`;
 console.log(f);
+
+console.log(document.body);
+// document.body.innerHTML = "Change....";
+document.body.style.color = "red";
+document.body.style.fontSize = "100px";
+// single line comment
+/*
+This will be 
+A multiple line comment
+*/
+
+document.getElementById("first").innerHTML="1"
