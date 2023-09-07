@@ -1,0 +1,30 @@
+.absolute {
+    border: solid 1px rgb(233, 145, 145);
+    position: absolute;
+    /* top: 100px; */
+    /* left: 100px; */
+    /* right: 100px; */
+    background-color: pink;
+}
+
+.z-1{
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+
+.z-2{
+    top: 110px;
+    left: 110px;
+    z-index: 1;
+}
+
+.relative {
+    width: 100%;
+    height: 200px;
+    background-color: yellow;
+}
+
+.relative-2 {
+    position: relative;
+}
