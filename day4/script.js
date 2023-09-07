@@ -31,4 +31,22 @@ This will be
 A multiple line comment
 */
 
-document.getElementById("first").innerHTML="1"
+// document.getElementById("first").innerHTML="1"
+
+// document.body.childNodes[1].innerHTML = "1";
+// document.body.childNodes[3].innerHTML = "2";
+
+/* The index starts at zero since there 
+is a space ethen index 0 is the first break of line 
+between the body and div and element index 2 will be break
+between the divs
+*/
+
+// document.getElementsByTagName("div")[0].innerHTML = "1";
+// The above is the best since it follows array without confusing
+
+// document.querySelector(".second").innerHTML = "1";
+
+// document.querySelectorAll(".second")[1].innerHTML = "1";
+
+
