@@ -88,4 +88,49 @@ function whatDayOfWeek(yyyy, mm, dd) {
 
 console.log(whatDayOfWeek(1994, 07, 31));
 
-//
+// Math Object
+console.log(Math.ceil(Math.random() * 100));
+
+console.log(
+  Math.floor(Math.random() * 10),
+  Math.floor(Math.random() * 10),
+  Math.floor(Math.random() * 10)
+);
+
+/*
+var today=new Date()
+console.log(today)
+var yyyy = today.getFullYear();
+var mm = today.getMonth()+1;
+var dd = today.getDate();
+var hh = today.getHours();
+var mi = today.getMinutes();
+var ss = today.getSeconds();
+var dates = `${dd}/${mm}/${yyyy} ${hh}:${mi}:${ss}`;
+console.log(dates);
+console.log(today.getDay())
+function timer() {
+    var today = new Date();
+var yyyy = today.getFullYear();
+var mm = today.getMonth()+1;
+var dd = today.getDate();
+var hh = today.getHours();
+var mi = today.getMinutes();
+var ss = today.getSeconds();
+
+var date = `${dd}/${mm}/${yyyy} ${hh}:${mi}:${ss}`;
+document.body.innerHTML = date;
+}
+id=setInterval(timer, 1000);
+
+function whatDayOfWeek(yyyy,mm,dd){
+    var days=['sun', 'mon', 'tue', 'wed', 'thu','fri','sat'];
+    var date = new Date(yyyy,mm-1,dd)
+    return days[date.getDay()]
+}
+console.log(whatDayOfWeek(2000,12,25))
+
+console.log(Math.random()*300)
+
+console.log(Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.floor(Math.random()*10),Math.ceil(Math.random()*10))
+*/
