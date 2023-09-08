@@ -88,7 +88,7 @@ switch (s) {
     break;
   default:
     console.log(4);
-    break
+    break;
 }
 
 console.log("------------------------------------------");
