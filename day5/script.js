@@ -44,4 +44,51 @@
 
 // Times table
 
+// var i = 1;
+// do {
+//   i++;
+//   var j = 0;
+//   do {
+//     j++;
+//     console.log(i + " * " + j + " = " + i * j);
+//   } while (j < 10);
+// } while (i < 10);
 
+//  Another example
+
+var i = 1;
+var j = 1;
+do {
+  j++;
+  if (j % 10 == 0) i++;
+  console.log(i + " * " + (j % 10) + " = " + i * (j % 10));
+} while (j < 100);
+
+//  While loop
+
+var i = 2;
+while (i < 10) {
+  i++;
+  console.log(i);
+}
+
+console.log("------------------------------------------");
+
+// Switch Case
+var s = 1;
+switch (s) {
+  case 1:
+    console.log(1);
+    break;
+  case 2:
+    console.log(2);
+    break;
+  case 3:
+    console.log(3);
+    break;
+  default:
+    console.log(4);
+    break
+}
+
+console.log("------------------------------------------");
