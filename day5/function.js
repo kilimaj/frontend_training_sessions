@@ -116,13 +116,3 @@ function makeTable(row, col) {
 
 // makeTable(10, 10);
 // document.body.innerHTML = makeTable(10, 10);
-
-// Other examples
-function plus10(a) {
-  a = a + 10;
-  return a;
-}
-var b = 10;
-b = plus10(b);
-console.log(b);
-
