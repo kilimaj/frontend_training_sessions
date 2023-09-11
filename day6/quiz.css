@@ -2,5 +2,14 @@
   height: 100px;
   width: 100px;
   border: solid 3px green;
-  color: red
+  color: red;
+  margin-bottom: 20px;
+}
+
+.box-100 {
+  height: 100px;
+  width: 100px;
+  border: solid 3px green;
+  color: red;
+  margin-bottom: 20px;
 }
