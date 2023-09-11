@@ -16,8 +16,14 @@ function stopEvent(event) {
   event.stopPropagation();
 }
 
-document.querySelector(".box").addEventListener("click", function () {
-  console.log((this.innerHTML = "New CLICK ....."));
-  console.log(event);
-  console.log("click BOX");
-});
+
+
+//   document.querySelector(".box").addEventListener("click", function () {
+//     console.log((this.innerHTML = "New CLICK ....."));
+//     console.log(event.offsetX, event.offsetY);
+//   });
+
+// document.querySelector(".box").addEventListener("click", function () {
+//   console.log((this.innerHTML = "New CLICK ....."));
+//   console.log(event.offsetX, event.offsetY);
+// });
