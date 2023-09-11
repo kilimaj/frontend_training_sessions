@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="input-quiz.js" defer></script>
+    <style>
+      form {
+        margin-top: 20vh;
+        margin-left: 20vw;
+        height: 50vh;
+        width: 50vw;
+        border: solid 1px;
+        border-radius: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="quiz" onsubmit="return check()">
+      <br />
+      <label>
+        ID :
+        <input name="id" type="text" placeholder="insert ID" />
+      </label>
+      <br /><br />
+      <label>
+        Password :
+        <input type="password" name="password" placeholder="insert Password" />
+      </label>
+      <br /><br />
+      Role :
+      <label>
+        Admin:
+        <input type="radio" name="role" id="admin" value="admin" /> Member:
+        <input type="radio" name="role" id="member" value="member" />
+      </label>
+      <br /><br />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>
