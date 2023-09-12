@@ -1,15 +1,27 @@
 import "./App.css";
+import Table, { Div } from "components/App";
 
 // function App() {
 // class App () {}
 const App = () => {
-  let a = "AAA";
+  return (
+    <>
+      <Div text="TEXT">
+        <div>children</div>
+      </Div>
+      <Table></Table>
+    </>
+  );
+
+  {
+    /*let a = "AAA";
   let b = <div>BBBB</div>;
   const fun = (param) => {
     return "function" + param;
   };
 
   const funA = (param) => {
+    
     return <div>{param}</div>;
   };
 
@@ -18,7 +30,7 @@ const App = () => {
   };
   return (
     <>
-      {/* Comment */}
+     
       {funA("A")}
       {b}
       {fun("+param")}
@@ -55,6 +67,8 @@ const App = () => {
       <div>HELLO WORLD !</div>
     </>
   );
+*/
+  }
 };
 
 export default App;
