@@ -1,38 +1,39 @@
-export const Div = ({ text, children }) => {
+export const Div = ({ id, children, ...rest }) => {
   return (
-    <div>
-      {children} - {text} - {children}
-    </div>
+    <>
+      <div id={id} {...rest}>
+        {children}
+      </div>
+      <div id={id} className={rest.className} style={rest.style}>
+        {children}
+      </div>
+    </>
   );
 };
 
-const Table = () => {
+const Table = ({ children, ...rest }) => {
   return (
-    <table border="1">
-      <Tbody></Tbody>
+    <table border="1" {...rest}>
+      {children}
     </table>
   );
 };
 
-const Tbody = () => {
-  return (
-    <tbody>
-      <Tr></Tr>
-    </tbody>
-  );
+const Tbody = ({ children, ...rest }) => {
+  return <tbody {...rest}>{children}</tbody>;
 };
 
-const Tr = () => {
-  return (
-    <tr>
-      <Td value={1} />
-      <Td value={2} />
-    </tr>
-  );
+const Tr = ({ children, ...rest }) => {
+  return <tr {...rest}>{children}</tr>;
 };
 
-const Td = ({ value }) => {
-  return <td>{value}</td>;
+const Td = ({ children, ...rest }) => {
+  return <td {...rest}>{children}</td>;
 };
+
+// Exporting the components as a package
+Table.Body = Tbody;
+Table.Row = Tr;
+Table.Col = Td;
 
 export default Table;

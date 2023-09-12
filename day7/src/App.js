@@ -1,15 +1,26 @@
 import "./App.css";
-import Table, { Div } from "components/App";
+import Table, { Div, Tbody, Tr, Td } from "components/App";
 
 // function App() {
 // class App () {}
 const App = () => {
   return (
     <>
-      <Div text="TEXT">
+      <Div id="div" className="box" style={{ width: 100, height: 100 }}>
         <div>children</div>
       </Div>
-      <Table></Table>
+      <Table className="table" id="tbl">
+        <Table.Body>
+          <Table.Row>
+            <Table.Col>1</Table.Col>
+            <Table.Col>2</Table.Col>
+          </Table.Row>
+          <Table.Row>
+            <Table.Col>1</Table.Col>
+            <Table.Col>2</Table.Col>
+          </Table.Row>
+        </Table.Body>
+      </Table>
     </>
   );
 
