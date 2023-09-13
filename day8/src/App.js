@@ -1,9 +1,64 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Div from "components/State";
+import Form from "components/Form";
 
 const App = () => {
-  const [flag, setFlag] = useState(true);
+  const data = useRef({});
+  return (
+    <>
+      <button
+        onClick={() => {
+          console.log(data);
+        }}
+      >
+        Print data
+      </button>
+      <Form.Text data={data} id="a" />
+      <br /> <br />
+      <Form.Password data={data} id="b" />
+      <br /> <br />
+      <Form.Textarea data={data} id="c" />
+      <br /> <br />
+      <Form.Select
+        data={data}
+        id="d"
+        options={[
+          {
+            label: "Tanzania",
+            value: "TZ",
+          },
+          { label: "Korea", value: "KR" },
+        ]}
+      />
+      <br /> <br />
+      <Form.Radio
+        data={data}
+        id="e"
+        options={[
+          {
+            label: "Tanzania",
+            value: "TZ",
+          },
+          { label: "Korea", value: "KR" },
+        ]}
+      />
+      <br /> <br />
+      <Form.Check
+        data={data}
+        id="f"
+        options={[
+          {
+            label: "Tanzania",
+            value: "TZ",
+          },
+          { label: "Korea", value: "KR" },
+        ]}
+      />
+      <br /> <br />
+    </>
+  );
+  /* const [flag, setFlag] = useState(true);
   return (
     <>
       {flag && <Div />}
@@ -24,6 +79,7 @@ const App = () => {
       />
     </>
   );
+  */
   // let a = 0;
   {
     /* 
