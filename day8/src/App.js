@@ -2,8 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Div from "components/State";
 import Form from "components/Form";
+import Router from "components/Router";
 
 const App = () => {
+  return <Router />;
+
+  /*
   const data = useRef({});
   return (
     <>
@@ -58,6 +62,7 @@ const App = () => {
       <br /> <br />
     </>
   );
+  */
   /* const [flag, setFlag] = useState(true);
   return (
     <>
@@ -81,8 +86,8 @@ const App = () => {
   );
   */
   // let a = 0;
-  {
-    /* 
+
+  /* 
   const [state, setState] = useState(1);
   const [state2, setState2] = useState(1);
   console.log("RENDER...");
@@ -110,7 +115,6 @@ const App = () => {
     
   );
   */
-  }
 };
 
 export default App;
