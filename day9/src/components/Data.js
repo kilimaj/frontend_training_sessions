@@ -17,6 +17,16 @@ const JsonServer = () => {
     console.log(response.data);
   };
 
+  const updateData = async () => {
+    let data = {
+      title: "updated react",
+      author: "John Kilima",
+    };
+    const response = await axios.put("http://localhost:4000/posts/2", data);
+    console.log(response);
+    console.log(response.data);
+  };
+
   return (
     <>
       <button
@@ -33,6 +43,14 @@ const JsonServer = () => {
         }}
       >
         POST
+      </button>
+      <br></br>
+      <button
+        onClick={() => {
+          updateData();
+        }}
+      >
+        UPDATE
       </button>
     </>
   );
