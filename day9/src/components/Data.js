@@ -18,3 +18,5 @@ const JsonServer = () => {
     </>
   );
 };
+
+export default JsonServer;
