@@ -4,6 +4,11 @@
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "title": "react",
+      "author": "John Kilima",
+      "id": 2
     }
   ],
   "comments": [
